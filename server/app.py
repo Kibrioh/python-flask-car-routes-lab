@@ -15,7 +15,7 @@ def index():
 def model(model):
     if model in existing_models:
         return f"Flatiron {model} is in our fleet!", 200
-    return f"No models called {model} exists in our catalog"
+    return f"No models called {model} exists in our catalog", 401
 
 # This checks if this specific file is being run directly
 if __name__ == "__main__":
